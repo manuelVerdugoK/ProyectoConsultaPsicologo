@@ -1,0 +1,66 @@
+/************
+Universal
+***********/
+*{
+    list-style: none;
+    margin: 0;
+}
+/************
+Header
+***********/
+
+
+/*Top Header - Social bar*/
+#top-header{
+    float: right;
+}
+    #top-header{
+        background: #9acdd9;
+        width: 100%;
+        height: 30px;
+        position: fixed;
+        color: white;
+    }
+        #top-header li{
+            margin:0 100px;
+            display: inline-block;
+            line-height: 30px;
+        }
+            #top-header li a{
+                color: white;
+            }
+
+
+/*nav bar*/
+.navbar{
+    padding: 30px;
+}
+/************
+cuerpo
+***********/
+
+/*Carrusel*/
+.img-carousel{
+    width: 100%;
+    height: 600px;
+}
+.carousel-control{
+    color: white;
+    width: 15%;
+    opacity: .5;
+    transition: .15s ease;
+}
+.carousel-indicator{
+    width: 30px;
+    height: 3px;
+    transition: .6s ease;
+}
+
+.carousel-caption{
+    width: 70%;
+    color: white;
+    font-size: 1.5em;
+}
+.carousel-transition-duration{
+    transition-duration:.6s;
+}
