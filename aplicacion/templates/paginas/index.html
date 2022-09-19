@@ -2,6 +2,8 @@
 {% load static %}
 {% block titulo %} INICIO {% endblock %}
 
+{% block headstyle %} <link rel="stylesheet" href="{% static 'css/index.css' %}"> {% endblock %}
+
 {% block contenido %} 
     <!--#Carrusel-->
 <div id="carousel" class="carousel slide" data-bs-ride="false">
@@ -36,7 +38,6 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="/aplicacion/templates/img/img3.jpg" class="img-carousel">
             <img src="{% static 'img/img3.jpg' %}" class="img-carousel">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Third slide label</h3>

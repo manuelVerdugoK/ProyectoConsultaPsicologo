@@ -1,41 +1,46 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block headstyle %} <link rel="stylesheet" href="{% static 'css/articulos.css' %}"> {% endblock %}
 
 {% block titulo %} Articulos {% endblock %}
 
 {% block contenido %} 
 <div class="container">
     <div class="row">
-        <section class="col-sm-12 col-md-12 col-lg-12">
+        <div class="col-sm-12 col-md-12 col-lg-12">
             <h1>Articulos</h1>
             <p>
                 Dejamos a tu disposición esta serie de articulos que podrían ayudarte a entender
                 algunas de las situaciones por las que podrías estar pasando. desde una perspectiva
-                psicologica.
-            </p>
-
-            <p>
-                Con un poco de suerte, el conocimiento que puedas obtener podrá ayudarte a sobrellevar
+                psicologica, con un poco de suerte, el conocimiento que puedas obtener podrá ayudarte a sobrellevar
                 el mal tiempo. pero si no es así y sientes que algunas situaciones te sobrepasan, deberías
                 buscar ayuda profesional. 
             </p>
             <p>
                 En SAMAR sabemos que para algunas personas, solicitar ayuda
                 psicologica puede sonar a taboo; pero recuerda, es mejor estar mejor.
-            </p>
-
-            <P>
+                <br>
                 Da el primer paso. Comunicate con nosotros
-            </P>
+            </p>
+        </div>
 
-            <article>
-                <h3>Lee acerca de la Depresion</h3>
-            </article>
-            <article>
-                <h3>Lee acerca de la Ansiedad</h3>
-            </article>
-            <article>
-                <h3>Lee acerca de la Inseguridad</h3>
-            </article>
+        <section class="col-sm-12 col-md-12 col-lg-12">
+            <img class="col-lg-2" src="{% static 'img/archivo.jpg' %}" width="100px" height="100px">
+            <img class="col-lg-2" src="{% static 'img/archivo.jpg' %}" width="100px" height="100px">
+            <img class="col-lg-2" src="{% static 'img/archivo.jpg' %}" width="100px" height="100px">
+            <img class="col-lg-2" src="{% static 'img/archivo.jpg' %}" width="100px" height="100px">
+            <img class="col-lg-2" src="{% static 'img/archivo.jpg' %}" width="100px" height="100px">
+
+            <div class="col-lg-2">
+                <h1>askdfjad</h1>
+            </div>
+            <div class="col-lg-2">
+                <h1>askdfjad</h1>
+            </div>
+            <div class="col-lg-2">
+                <h1>askdfjad</h1>
+            </div>
         </section>
     </div>
 </div>
