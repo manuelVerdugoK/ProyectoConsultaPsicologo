@@ -1,7 +1,89 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block titulo %} Nosotros {% endblock %}
 
 {% block contenido %} 
-<h1> Nosotros</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h2> ¿Quienes somos? </h2>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <p>Somos un equipo de psicólogos de la Universidad de Valparaíso. Contamos con 
+                formación en el campo clínico y educacional. Nuestro enfoque es sistémico, 
+                narrativo y con perspectiva de género. Tenemos por objetivo permitir un acceso 
+                justo y digno a la salud mental
+            </p>
+            <p>
+                Realizamos terapia psicológica centrada en la persona, en donde es fundamental 
+                la comprensión de su entorno, habilidades y recursos para lograr en conjunto 
+                encontrar soluciones y estrategias que permitan sobrellevar las dificultades que 
+                pueda enfrentar en los distintos momentos de su vida. Es en este sentido que la
+                 terapia se enfoca mayoritariamente en disminuir el malestar y en contribuir a 
+                 desarrollar una manera más comprensiva y reflexiva de comunicarnos y desenvolvernos 
+                 tanto con el resto como con nosotrxs mismxs.
+            </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.303431777!2d-71.55157299999999!3d-33.0221355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfec5bc83b364ee5a!2sFarmacia%20MadreTierra!5e0!3m2!1ses-419!2scl!4v1663582946403!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h2> Visión de SAMAR </h2>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-12">
+            <p>
+                Vemos a la persona que asiste a terapia como experta en su propia vida, y nosotrxs psicologxs,
+                 expertxs en un tipo de conversación terapéutica y liberadora.
+            </p>
+            <p>
+                Es por esto que nuestra visión de la terapia se puede enmarcar en el concepto Samar; 
+                "compañerx en conversaciones al atardecer", ya que cuando nuestra mente se encuentra 
+                encerrada en el problema, puede ser fundamental la compañía experta para atravesar de una 
+                manera más amable la oscuridad que pueda estar ganando espacio en nuestra vida. De este modo, 
+                la terapia se adapta a las necesidades, habilidades, visiones de mundo y espirituales de la 
+                persona, para que en conjunto comience a tomar decisiones que propicien un cambio en su vida, 
+                y su posterior autonomía.
+            </p>
+        </div>
+        
+        
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h3>Integrantes </h3>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <img src="{% static 'img/psico_2.webp' %}" width="500px" height="300px">>
+            <h5>Psi. Natalia Quintanilla: </h5>
+            <p>
+                    Realizo labores como psicologx clinicx en la agrupación Mums Valparaíso para la atención
+                     en primeros auxilios psicológicos, además de realizar de manera independiente psicoterapia
+                      con enfoque narrativo y de género 
+            </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <img src="{% static 'img/psico_1.webp' %}" width="500px" height="300px">
+            <h5>Psi. Alejandro Cordovez</h5>
+            <p>
+                Realizo labores como terapeuta clínico, enfocado en terapia de pareja, masculinidades y TEA.
+            </p>
+        </div>
+            
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h5> En samar te ofrecemos</h5>
+            <p>
+                Desde un principio, procuramos entregar un espacio seguro, accesible y comprensivo para
+                 acompañarte, por lo que no dudes en contactarnos si necesitas comenzar un proceso terapéutico.
+            </p>
+        </div>
+
+
+
+
+
+    </div>
+</div>
+
 {% endblock %}
