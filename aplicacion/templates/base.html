@@ -48,8 +48,8 @@
                 </div><!--/#top header-->
         
                 <!--#Nav bar-->
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid" style="background-color: #FFFFFF;">
                         <a class="navbar-brand" href="{% url 'index' %}">
                             <img src="{% static 'img/logo1-sf.png' %}" alt="" width="200" height="80">
                         </a>
@@ -58,6 +58,7 @@
                                 <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
                                 <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
                                 <a class="nav-link" href="{% url 'articulos' %}">Artículos</a>
+                                <a class="nav-link" href="{% url 'agendar' %}">Agenda tu hora</a>
                             </div>
                         </div>
                     </div>
