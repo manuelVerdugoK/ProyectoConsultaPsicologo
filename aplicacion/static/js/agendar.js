@@ -12,9 +12,5 @@ function fechaCalendario(fecha){
     var dateControl_fecha = document.querySelector('input[type="date"]');
     dateControl_fecha.value = fecha; 
     dateControl_fecha.min = fecha;
-
-    var dateControl_hora = document.querySelector('input[type="time"]');
-    dateControl_hora.min="10:00";
-    dateControl_hora.max="18:00";
-    dateControl_hora.value="12:00";
 }
+
