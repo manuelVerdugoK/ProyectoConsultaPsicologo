@@ -3,12 +3,13 @@ Universal
 ***********/
 *{
     list-style: none;
-    margin: 0;
+    margin: 0 0;
     padding: 0;
 }
 /************
 Header
 ***********/
+
 
 /*Top Header - Social bar*/
 #top-header{
@@ -18,20 +19,39 @@ Header
         background: #9acdd9;
         width: 100%;
         height: 30px;
-        position: fixed;
+        left: 0%;
         color: white;
+        position: fixed;
     }
         #top-header li{
-            margin:0 100px;
             display: inline-block;
+            margin: 0 10px;
             line-height: 30px;
         }
             #top-header li a{
                 color: white;
             }
 
+div#direccion{
+    float: right;
+    margin: 0 2px;
+}
+
 
 /*nav bar*/
 .navbar{
-    padding: 30px;
+    padding:0 20px;
+
+}
+    .container-fluid{
+        margin-top: 5px;
+       
+    }
+        .navbar-brand{
+            margin-top: 10px;
+
+        }
+            .collapse{
+                margin-top: 20px;
+            }
 }
