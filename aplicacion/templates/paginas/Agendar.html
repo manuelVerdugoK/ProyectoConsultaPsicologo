@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block headstyle %} <link rel="stylesheet" href="{% static 'css/articulos.css' %}"> {% endblock %}
+
+{% block titulo %} Articulos {% endblock %}
+
+{% block contenido %} 
+<div class="col-sm-12 col-md-12 col-lg-12">
+    <h3>Agenda una hora con nosotros</h3>
+</div>
+
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Button with data-bs-target
+  </button>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Agende su hora</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div>
+            El primer paso para agendar tu hora es determinar ¿Con quién? y ¿En que modalidad?.
+        </div>
+
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Elige a tu terapeuta
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Psi. Alejandro Cordovez</a></li>
+          <li><a class="dropdown-item" href="#">Psi. Natalia Quintanilla</a></li>
+        </ul>
+      </div>
+      <div>
+        Ahora, deberás indicar en que modalidad te atenderás
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Elige a tu terapeuta
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Cita Online</a></li>
+          <li><a class="dropdown-item" href="#">Cita Presencial</a></li>
+        </ul>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+
+
+
+{% endblock %}

@@ -4,11 +4,11 @@ Universal
 *{
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 /************
 Header
 ***********/
-
 
 /*Top Header - Social bar*/
 #top-header{

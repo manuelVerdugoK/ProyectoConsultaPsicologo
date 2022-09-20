@@ -6,3 +6,5 @@ def nosotros(request):
     return render(request,'paginas/nosotros.html')
 def articulos(request):
     return render(request,'paginas/articulos.html')
+def agendar(request):
+    return render(request,'paginas/agendar.html')

@@ -20,81 +20,86 @@
 </head>
 
 <body>
-    <header id="main-header"><!--#Main header-->
-        <!--#Top header-->
-        <div id="top-header" align="center">
-            <!--Contacto-->
-                <li><i class="bi bi-telephone-fill"></i> 123456789</li>
-                <li><i class="bi bi-envelope-fill"></i> email@email.com</li>
-            <!--Redes Sociales-->
-                <li><a href="#!" role="button">
-                    <i class="bi bi-whatsapp"></i>
-                </a></li>
-            <!--dirección-->
-            <li><i class="bi bi-geo-alt-fill"></i>Av. Libertad 17, Viña del mar.</li>
-        </div><!--/#top header-->
-
-        <!--#Nav bar-->
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static 'img/logo1-sf.png' %}" alt="" width="200" height="80">
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
-                        <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
-                        <a class="nav-link" href="{% url 'articulos' %}">Artículos</a>
+    <div class="container">
+        <div class="row">
+            <header id="main-header"><!--#Main header-->
+                <!--#Top header-->
+                <div id="top-header" align="center">
+                    <!--Contacto-->
+                        <li><i class="bi bi-telephone-fill"></i> 123456789</li>
+                        <li><i class="bi bi-envelope-fill"></i> email@email.com</li>
+                    <!--Redes Sociales-->
+                        <li><a href="#!" role="button">
+                            <i class="bi bi-whatsapp"></i>
+                        </a></li>
+                    <!--dirección-->
+                    <li><i class="bi bi-geo-alt-fill"></i>Av. Libertad 17, Viña del mar.</li>
+                </div><!--/#top header-->
+        
+                <!--#Nav bar-->
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="{% url 'index' %}">
+                            <img src="{% static 'img/logo1-sf.png' %}" alt="" width="200" height="80">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
+                                <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
+                                <a class="nav-link" href="{% url 'articulos' %}">Artículos</a>
+                            </div>
+                        </div>
                     </div>
+                </nav><!--/#Nav bar-->
+            </header><!--/#Main header-->
+        
+        
+                    {% block contenido %} {% endblock %}
+        
+            <footer class="text-center" style="background-color: #c1a9d9;">
+                <!-- Grid container -->
+                <div class="container pt-4" style="backround-color: #ab96b7;">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a
+                            class="btn btn-link btn-floating btn-lg text-light m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                            ><i class="bi bi-facebook"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a
+                            class="btn btn-link btn-floating btn-lg text-light m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                            ><i class="bi bi-instagram"></i>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a
+                            class="btn btn-link btn-floating btn-lg text-light m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                            ><i class="bi bi-whatsapp"></i> 
+                        </a>
+                    </section>
+                    <!-- Section: Social media -->
                 </div>
-            </div>
-        </nav><!--/#Nav bar-->
-    </header><!--/#Main header-->
-
-
-            {% block contenido %} {% endblock %}
-
-    <footer class="text-center" style="background-color: #c1a9d9;">
-        <!-- Grid container -->
-        <div class="container pt-4" style="backround-color: #ab96b7;">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a
-                    class="btn btn-link btn-floating btn-lg text-light m-1"
-                    href="#!"
-                    role="button"
-                    data-mdb-ripple-color="dark"
-                    ><i class="bi bi-facebook"></i>
-                </a>
-                <!-- Instagram -->
-                <a
-                    class="btn btn-link btn-floating btn-lg text-light m-1"
-                    href="#!"
-                    role="button"
-                    data-mdb-ripple-color="dark"
-                    ><i class="bi bi-instagram"></i>
-                </a>
-                <!-- WhatsApp -->
-                <a
-                    class="btn btn-link btn-floating btn-lg text-light m-1"
-                    href="#!"
-                    role="button"
-                    data-mdb-ripple-color="dark"
-                    ><i class="bi bi-whatsapp"></i> 
-                </a>
-            </section>
-            <!-- Section: Social media -->
+                <!-- Grid container -->
+                    
+                <!-- Copyright -->
+                <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+                    <a class="text-light" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+                </footer>
         </div>
-        <!-- Grid container -->
-            
-        <!-- Copyright -->
-        <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2020 Copyright:
-            <a class="text-light" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-        </footer>
+    </div>
+
 </body>
 
 </html>
