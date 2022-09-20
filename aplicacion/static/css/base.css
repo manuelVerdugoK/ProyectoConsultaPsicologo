@@ -40,11 +40,11 @@ div#direccion{
 
 /*nav bar*/
 .navbar{
-    padding:0 20px;
+    padding:0 30px;
 
 }
     .container-fluid{
-        margin-top: 5px;
+        margin-top: 20px;
        
     }
         .navbar-brand{
